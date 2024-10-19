@@ -1,0 +1,157 @@
+        /* 既存のスタイルは省略 */
+        
+        body {
+            background-color: black;
+            background-image: url('macOS-Sonoma-light.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+
+/* 既存のスタイルは省略 */
+
+.join-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 1.4; /* 行間を狭く設定 */
+}
+
+/* イベントタイトルのスタイル */
+.join-section h2 {
+    font-size: 24px; /* イベントタイトルのフォントサイズ */
+    margin-bottom: 10px;
+  
+}
+.join-section h1 {
+    font-size: 15px; /* イベントタイトルのフォントサイズ */
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* イベント詳細のスタイル */
+.join-section .event-details {
+    font-size: 20px; /* イベント詳細のフォントサイズ */
+    margin-bottom: 10px;
+}
+
+/* イベント日程のスタイル */
+.join-section .event-date {
+    font-size: 18px; /* イベント日程のフォントサイズ */
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* イベントに参加するボタンのスタイル */
+.join-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-size: 16px; /* ボタンのフォントサイズ */
+}
+
+.join-button:hover {
+    background-color: #0056b3;
+}
+
+/* モバイルデバイス用のスタイル */
+@media screen and (max-width: 767px) {
+    .join-section {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+  header {
+            padding: 30px 0; /* 上下に余白を設定 */
+        }
+
+        .app-button {
+            margin-top: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .app-button a img {
+            width: 150px;
+            height: auto;
+            border-radius: 0;
+            object-fit: contain;
+        }
+
+        .app-button p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #000000;
+            margin-top: 10px;
+        }
+
+        /* Add this CSS to style the "Join Now" button */
+.join-button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add some padding for better button appearance */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add rounded corners */
+    display: inline-block;
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.join-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Add this CSS for mobile devices */
+@media screen and (max-width: 767px) {
+    body {
+        background-attachment: initial; /* Remove fixed background for mobile */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Make a single column for mobile */
+    }
+
+    .join-section {
+        margin-left: 10px; /* Adjust margin for mobile */
+        margin-right: 10px; /* Adjust margin for mobile */
+        text-align: center;
+    }
+
+    .join-section img {
+        margin: 10px auto; /* Center images horizontally and add some margin */
+    }
+
+    .app-button {
+        display: block; /* Make buttons stack vertically for mobile */
+        margin: 10px auto; /* Center buttons horizontally and add some margin */
+    }
+}
